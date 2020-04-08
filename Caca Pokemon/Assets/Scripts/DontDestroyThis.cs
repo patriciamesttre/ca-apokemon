@@ -5,14 +5,18 @@ using UnityEngine;
 public class DontDestroyThis : MonoBehaviour
 {
 
-    DontDestroyThis[] itens;
+    private static DontDestroyThis musicaInstance;
     // Start is called before the first frame update
     void Start()
     {
-        itens = FindObjectsOfType<DontDestroyThis>();
-        if (itens.Length <= 1)
+        DontDestroyOnLoad(gameObject);
+
+        if (musicaInstance == null)
         {
-            DontDestroyOnLoad(gameObject);
+            musicaInstance = this;
+        } else
+        {
+            Destroy(gameObject);
         }
     }
 
