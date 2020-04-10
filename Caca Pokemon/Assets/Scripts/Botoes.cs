@@ -44,7 +44,7 @@ public class Botoes : MonoBehaviour
 
     public void Diminuir()
     {
-        if (volume > 100)
+        if (volume > 0)
         {
             volume -= 10;
             volumeVisor.text = "Volume: " + volume;
