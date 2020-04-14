@@ -742,6 +742,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e216351803ff850429111f395ff0f62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetoMusica: {fileID: 0}
+  volumeVisor: {fileID: 0}
+  musica1: {fileID: 0}
+  musica2: {fileID: 0}
 --- !u!4 &1492574135
 Transform:
   m_ObjectHideFlags: 0
