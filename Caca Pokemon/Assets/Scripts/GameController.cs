@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -13,9 +14,10 @@ public class GameController : MonoBehaviour
     public void Salvar()
     {
         PlayerPrefs.SetString("NomeJogador", nome.text);
-        pontuacao.text = "Pontuação\n" + PlayerPrefs.GetString("Nome Jogador") + " ; " + PlayerPrefs.GetInt("PontosAtual");
-        nome.text = "";
+        pontuacao.text = "Pontuação\n" + PlayerPrefs.GetString("NomeJogador") + " : " + PlayerPrefs.GetInt("PontosAtual");
+        nome.text = " ";
 ;
+        SceneManager.LoadScene("CenaRanking");
     }
 
 
