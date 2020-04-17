@@ -65,7 +65,7 @@ public class ControlaRanking : MonoBehaviour
         listaCampeoes.text += " - " + PlayerPrefs.GetInt("PontosJogador2");
 
         listaCampeoes.text += "\n3° - " + PlayerPrefs.GetString("NomeJogador3");
-        listaCampeoes.text += " - " + PlayerPrefs.GetInt("PontosJogador1");
+        listaCampeoes.text += " - " + PlayerPrefs.GetInt("PontosJogador3");
 
         listaCampeoes.text += suaPontuacao;
 
